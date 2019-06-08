@@ -1,0 +1,50 @@
+/* 
+    Created on : May 28, 2019, 6:55:02 PM
+    Author     : court
+*/
+
+/*this is the styling for each of the divs*/
+.box {
+    border: 5px groove gray;
+    padding: 10px;
+    margin: 25px;
+}
+
+/*this is for the first div containing the image*/
+#img {
+    grid-area: first;
+}
+
+/*this is for the second div where the word image will be*/
+#comp {
+    grid-area: second;
+}
+
+/*this is for the third div where the random word images will appear*/
+#words {
+    grid-area: third;
+}
+
+.sortBox {
+    
+}
+
+ul {
+  list-style-type: none;
+/*  white-space: nowrap;*/
+}
+
+/*li {
+    display: inline-block;
+    white-space:normal;
+}*/
+
+/*Create Grid*/
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "first second"
+        "third third";
+/*    height: 75px;*/
+}
